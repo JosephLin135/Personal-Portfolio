@@ -543,6 +543,17 @@ h2 {
   background: #2c3e50;
 }
 
+/* Chinese Food Ordering App Images */
+.menu-image, .checkout-image {
+  max-width: 800px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 24px auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
 /* Contact Section Styles */
 #contacts {
   color: #fff;
