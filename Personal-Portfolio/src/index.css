@@ -543,6 +543,56 @@ h2 {
   background: #2c3e50;
 }
 
+/* Contact Section Styles */
+#contacts {
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  margin-top: 60px;
+}
+.contact-title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.contact-desc {
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+}
+.contact-form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.contact-input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+}
+.contact-textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 1rem;
+  min-height: 80px;
+}
+.contact-button {
+  background: #34495e;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Prevent section titles from being covered by the fixed nav bar */
+h1[id], h2[id], h3[id], .technical-title, .experience-title, .project-title {
+  scroll-margin-top: 80px;
+}
+
 @media (max-width: 900px) {
   .project-section {
     grid-template-columns: 1fr;

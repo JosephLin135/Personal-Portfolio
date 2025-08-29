@@ -27,7 +27,7 @@
               <li><a href="#skills">Skills</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#projects">My Projects</a></li>
-              <li><a href="#contacts">Contacts</a></li>
+              <li><a href="#contacts">Contact Me</a></li>
             </ul>
           </nav>
         </div>
@@ -146,7 +146,7 @@
             <li>Tailwind CSS</li>
             <li>GraphQL</li>
           </ul>
-          <a class="project-link" href="https://github.com/JosephLin135/LinProject" target="_blank">View on GitHub</a>
+          <a class="project-link" href="https://github.com/JosephLin135/ChinaMoon" target="_blank">View on GitHub</a>
         </div>
         <div class="project-item">
           <h2>Online Travel Reservation System</h2>
@@ -171,9 +171,33 @@
           <a class="project-link" href="#" target="_blank">Demo</a>
         </div>
       </div>
+      <div id="root"></div>
+    <div id="contacts" style="color: #fff; padding: 40px 0; text-align: center; margin-top: 60px;">
+      
+      <form action="https://formspree.io/f/myzdknry" method="POST" style="max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.querySelector('#contacts form');
+        if (contactForm) {
+          contactForm.addEventListener('submit', function(e) {
+            setTimeout(function() {
+              contactForm.reset();
+            }, 100);
+          });
+        }
+      });
+    </script>
+        <h2 class="contact-title">Contact</h2>
+      <p class="contact-desc">Send me a message and I'll get back to you!</p>
+      <form action="https://formspree.io/f/myzdknry" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
+        <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
+        <input type="text" name="phone" placeholder="Your Phone Number" class="contact-input" />
+        <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
+        <button type="submit" class="contact-button">Send Message</button>
+      </form>
     </div>
 
-    <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
