@@ -5,7 +5,7 @@ import ChatMessage from "./components/ChatMessage";
 
 const App = () => {
   const [chatHistory, setChatHistory] = useState([]);
-  const [showChatbot, setShowChatbot] = useState(true);
+  const [showChatbot, setShowChatbot] = useState(false);
   const chatBodyRef = useRef();
 
   const generateBotResponse = async ( history ) => {
