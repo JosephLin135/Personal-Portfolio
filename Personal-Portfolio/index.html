@@ -4,204 +4,344 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image" href="jl.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Joseph Lin</title>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0"
-    />
+    <title>Joseph Lin | Software Engineer</title>
     <link rel="stylesheet" href="src/index.css" />
   </head>
   <body>
-    <section class="image-section" id="top">
-      <img src="src/signature.png" alt="My Signature" class="image" />
+    <nav>
+      <div class="nav-inner">
+        <a href="#top" class="nav-logo">JL</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="hero" id="top">
+      <div class="hero-bg-glow"></div>
+      <div class="hero-content">
+        <p class="hero-greeting reveal">Hi there, my name is</p>
+        <h1 class="hero-name reveal">Joseph Lin.</h1>
+        <h2 class="hero-tagline reveal">I build things for the web &amp; mobile.</h2>
+        <p class="hero-desc reveal">
+          I'm a Computer Science graduate from Rutgers University with a passion for
+          full-stack development, data infrastructure, and mobile apps. Currently
+          based in the New York City Area.
+        </p>
+        <div class="hero-cta reveal">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-outline">Get In Touch</a>
+        </div>
+        <ul class="hero-links reveal">
+          <li>
+            <a href="mailto:linjoe135@gmail.com" aria-label="Email">
+              <img src="src/email.png" alt="Email" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/joseph-lin135" target="_blank" aria-label="LinkedIn">
+              <img src="src/linkedin.png" alt="LinkedIn" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/JosephLin135" target="_blank" aria-label="GitHub">
+              <img src="src/github.png" alt="GitHub" class="icon" />
+            </a>
+          </li>
+          <li>
+            <a href="public/JosephLinResume.pdf" target="_blank" aria-label="Resume">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <header>
-      <div class="header-container">
-        <div class="title-container">
-          <h1 class="main-title-greeting">Hi there,</h1>
-          <h1 class="main-title">I'm Joseph!</h1>
-          <nav>
-            <ul class="nav-links">
-              <li><a href="#top">About Me</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#experience">Experience</a></li>
-              <li><a href="#projects">My Projects</a></li>
-              <li><a href="#contacts">Contact Me</a></li>
-            </ul>
-          </nav>
+    <main>
+      <section class="section" id="about">
+        <div class="container">
+          <p class="section-label reveal">About</p>
+          <div class="about-card reveal">
+            <p>
+              Hello, my name is Joseph Lin and I am a Computer Science graduate with a
+              passion for web development and data engineering. I enjoy building
+              scalable applications with data to drive insight. I hold a Bachelor of Science in Computer Science and am still continuing to get my
+              undergraduate certificate in Packaging Engineering. I have previously interned at Horizon Blue Cross Blue Shield of New Jersey working as a Database Engineer, where I developed optimized SQL queries to track and manage server operations. I'm always open to networking, new opportunities, and collaborations — feel free to reach out!
+            </p>
+          </div>
         </div>
-      </div>
+      </section>
 
-      <ul class="image-nav">
-        <!-- <li>
-          <a href="public/resume1.pdf" target="_blank">
-            <img src="src/resume_image.png" alt="Resume" class="icon" />
-            <span class="icon-label">Resume</span>
-          </a>
-        </li> -->
-        <li>
-          <a href="mailto:linjoe135@gmail.com">
-            <img src="src/email.png" alt="Email" class="icon" />
-            <span class="icon-label">Email</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.linkedin.com/in/joseph-lin135" target="_blank">
-            <img src="src/linkedin.png" alt="LinkedIn" class="icon" />
-            <span class="icon-label">LinkedIn</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/JosephLin135" target="_blank">
-            <img src="src/github.png" alt="GitHub" class="icon" />
-            <span class="icon-label">GitHub</span>
-          </a>
-        </li>
-      </ul>
-    </header>
+      <section class="section" id="skills">
+        <div class="container">
+          <p class="section-label reveal">Skills</p>
+          <div class="skills-compact reveal">
+            <div class="skill-row">
+              <span class="skill-cat">Languages</span>
+              <span class="skill-items">Python, JavaScript, TypeScript, Java, C, C++, SQL, HTML/CSS</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-cat">Frameworks</span>
+              <span class="skill-items">React / React Native, Next.js, Node.js, GraphQL, Flask, Spring Boot, Pandas, NumPy, OpenCV</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-cat">Databases</span>
+              <span class="skill-items">PostgreSQL, Microsoft SQL Server, MongoDB, Oracle, MySQL, SQLite</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-cat">Tools</span>
+              <span class="skill-items">Docker, Git, Supabase, Vercel, Expo, Tableau, Roboflow, Figma, Jira, Jupyter</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-cat">Concepts</span>
+              <span class="skill-items">RESTful API Design, CI/CD, Agile / Scrum, JWT Auth, Full Stack &amp; Mobile Dev, System Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
 
-    <div class="body-container">
-      <div id="introduction">
-        <p class="introduction">
-          Hello, my name is Joseph Lin and I am Computer Science graduate with a
-          passion for web development and data engineering, and enjoy building
-          scalable applications with data to drive insight. I hold a Bachelor of Science in Computer Science and still continuing to get my
-          undergraduate certificate in Packaging Engineering. I have previously interned at Horizon Blue Cross Blue Shield of New Jersey working as a Database Engineer, where I developed optimized SQL queries to track and manage server operations. I'm always open to networking, new opportunities, and collaborations - feel free to reach out!
-        </p>
-      </div>
+      <section class="section" id="experience">
+        <div class="container">
+          <p class="section-label reveal">Experience</p>
+          <div class="expand-list reveal">
 
-      <h1 class="technical-title" id="skills">Technical Skills</h1>
+            <details class="expand-card" open>
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>Horizon Blue Cross Blue Shield of NJ</h3>
+                  <span class="expand-role">Software Engineer Intern, Data Infrastructure</span>
+                </div>
+                <span class="expand-date">Jun 2024 – Dec 2024</span>
+              </summary>
+              <div class="expand-content">
+                <ul class="expand-list-items">
+                  <li>Designed CI/CD pipelines across Microsoft SQL Server, Oracle, and MongoDB for 3+ enterprise applications, replacing manual releases with standardized, zero-touch SSDT workflows</li>
+                  <li>Cut nightly batch processing time by 30% on production claims data through SQL query and index optimization</li>
+                  <li>Automated routine database maintenance with Python and built a Tableau dashboard tracking 15+ database health metrics, flagging issues before they impacted production</li>
+                </ul>
+              </div>
+            </details>
 
-      <div class="box-container">
-        <div class="box">
-          <u>Languages</u>
-          <p class="box-languages">
-            Python, Java, JavaScript, SQL, C/C++, HTML/CSS, MATLAB
-          </p>
-        </div>
-        <div class="box">
-          <u>Databases</u>
-          <p class="box-databases">
-            MySQL, PostgreSQL, SQLite, Microsoft SQL Server, MongoDB
-          </p>
-        </div>
-        <div class="box">
-          <u>Frameworks & Libraries</u>
-          <p class="box-framelib">
-            React, Next.js, Tailwind CSS, Bootstrap, Flask, Pandas, NumPy, Matplotlib, PyGame, JavaFX, JUnit, Spring Boot
-          </p>
-        </div>
-        <div class="box">
-          <u>Tools</u>
-          <p class="box-tools">
-            Git, GitHub, VS Code, Intellij, Eclipse, Android Studio, Figma, Tableau, SharePoint, Adobe Photoshop, Microsoft Excel, SolidWorks
-          </p>
-        </div>
-        <div class="box">
-          <u>Interests</u>
-          <p class="box-interests">
-            Front End Development, Software Engineering, Software Development,
-            Machine Learning, Data Engineering, Artificial Intelligence, Generative AI,
-            Cyber-Security
-          </p>
-        </div>
-        <div class="box">
-          <u>Relevant Courses</u>
-          <p class="box-relevantCourses">
-            Data Structures and Algorithms, Object Oriented Programming, Software Engineering, Operating Systems, Computer Architecture, Internet Technology
-          </p>
-        </div>
-      </div>
+            <details class="expand-card">
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>Rutgers Blueprint Fellowship</h3>
+                  <span class="expand-role">Software Engineer Fellow</span>
+                </div>
+                <span class="expand-date">Sep 2023 – Dec 2023</span>
+              </summary>
+              <div class="expand-content">
+                <ul class="expand-list-items">
+                  <li>Architected a Flask REST API for task management and event coordination, serving 150+ students across 5 campus organizations</li>
+                  <li>Implemented JWT authentication, token refresh flows, and 3-tier role-based access control (admin, student, guest), validated by a PyTest suite</li>
+                  <li>Accelerated API response times by ~40% under concurrent load through optimized SQLite queries, connection pooling, and prepared-statement caching</li>
+                </ul>
+              </div>
+            </details>
 
-      
-      <h1 class="experience-title" id="experience">Experiences</h1>
-      <div class="experience-section">
-        <div class="experience-item">
-          <h2>Horizon Blue Cross Blue Shield of New Jersey</h2>
-          <h3>Database Engineer Intern</h3>
-          <p>June 2024 - Dec 2024</p>
-          <ul>
-            <p class="experience-desc">As a database engineer intern, I had helped to optimized the SQL Server performances by automating database deployments with CI/CD pipelines and implemented robust recovery systems. I also designed and built an interactive data visualization dashboard using Figma, Python, and Tableau that provided the CIO with real-time insights on server metrics.</p>
-          </ul>
+          </div>
         </div>
-        <div class="experience-item">
-          <h2>Rutgers Blueprint</h2>
-          <h3>Backend Software Engineering Fellow</h3>
-          <p>Sep 2023 - Dec 2023</p>
-          <ul>
-            <p class="experience-desc">Working as a backend software engineering fellow, I collaborated with the Rutgers Blueprint (Backend Team) to develop a secure and scalable RESTful API with Flask, implementing JWT-based authentication and a structured database to safeguard user data. The infrastructure that my team helped develop, supported the Rutgers Blueprint frontend team's application and ensured secured data and processes.</p>
-          </ul>
+      </section>
+
+      <section class="section" id="projects">
+        <div class="container">
+          <p class="section-label reveal">Projects</p>
+          <div class="expand-list reveal">
+
+            <details class="expand-card">
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>Cruxly — AI Climbing Mobile App</h3>
+                  <span class="expand-tech">TypeScript, React Native, Python, Supabase, YOLOv8</span>
+                </div>
+                <span class="expand-arrow material-symbols-rounded">expand_more</span>
+              </summary>
+              <div class="expand-content">
+                <p class="expand-desc">Built a mobile app that scans indoor climbing walls and detects holds in real time, reaching ~0.80 mAP on instance segmentation by fine-tuning YOLOv8-seg and RF-DETR models on a custom dataset of 1,700+ images. Engineered a Node.js API handling image uploads via Supabase Storage and triggering async YOLOv8 inference, streaming results to the mobile client in under 5 seconds.</p>
+                <ul class="project-tags">
+                  <li>TypeScript</li>
+                  <li>React Native</li>
+                  <li>Python</li>
+                  <li>Supabase</li>
+                  <li>PostgreSQL</li>
+                  <li>YOLOv8</li>
+                </ul>
+                <a class="project-link" href="https://github.com/JosephLin135" target="_blank">View on GitHub &rarr;</a>
+              </div>
+            </details>
+
+            <details class="expand-card">
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>Rallo — Event Coordination App</h3>
+                  <span class="expand-tech">TypeScript, React Native, Expo, Supabase Realtime, Twilio</span>
+                </div>
+                <span class="expand-arrow material-symbols-rounded">expand_more</span>
+              </summary>
+              <div class="expand-content">
+                <p class="expand-desc">Developed a zero-account event app that lets groups RSVP and coordinate, propagating RSVP state to all connected clients in under 1 second via Supabase Realtime subscriptions, eliminating server-side polling. Restricted event visibility and RSVP access to invited participants only by structuring PostgreSQL schemas with Row-Level Security.</p>
+                <ul class="project-tags">
+                  <li>TypeScript</li>
+                  <li>React Native</li>
+                  <li>Expo</li>
+                  <li>Supabase Realtime</li>
+                  <li>PostgreSQL</li>
+                  <li>Twilio</li>
+                </ul>
+                <div class="project-links-row">
+                  <a class="project-link" href="https://rallo.cc" target="_blank">Live Site &rarr;</a>
+                  <a class="project-link" href="https://github.com/JosephLin135" target="_blank">GitHub &rarr;</a>
+                </div>
+              </div>
+            </details>
+
+            <details class="expand-card">
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>Restaurant Ordering Platform</h3>
+                  <span class="expand-tech">JavaScript, React, Next.js, Tailwind CSS, GraphQL</span>
+                </div>
+                <span class="expand-arrow material-symbols-rounded">expand_more</span>
+              </summary>
+              <div class="expand-content">
+                <p class="expand-desc">Processed 150+ orders over 3 months in live production for my family's Chinese restaurant, replacing Grubhub and Uber Eats and saving $500+/month in commission fees. Gave staff real-time order visibility from submission through pickup by rendering 100+ menu items via Next.js SSR and GraphQL from Hygraph CMS.</p>
+                <ul class="project-tags">
+                  <li>JavaScript</li>
+                  <li>React</li>
+                  <li>Next.js</li>
+                  <li>Tailwind CSS</li>
+                  <li>GraphQL</li>
+                </ul>
+                <div class="project-images">
+                  <img src="src/main-menu.png" alt="Main Menu" />
+                  <img src="src/checkout.png" alt="Checkout" />
+                </div>
+                <a class="project-link" href="https://github.com/JosephLin135/ChinaMoon" target="_blank">View on GitHub &rarr;</a>
+              </div>
+            </details>
+
+            <details class="expand-card">
+              <summary class="expand-header">
+                <div class="expand-header-left">
+                  <h3>NBA Statistics REST API</h3>
+                  <span class="expand-tech">Java, Spring Boot, PostgreSQL, Spring Data JPA</span>
+                </div>
+                <span class="expand-arrow material-symbols-rounded">expand_more</span>
+              </summary>
+              <div class="expand-content">
+                <p class="expand-desc">Constructed a Java REST API serving multi-season stats from 150+ NBA players using Spring Boot and PostgreSQL, designed for sports analytics and fantasy sports applications. Modeled relational data across players, teams, and games using JPA/Hibernate with server-side pagination, filtering, and multi-season sorting.</p>
+                <ul class="project-tags">
+                  <li>Java</li>
+                  <li>Spring Boot</li>
+                  <li>PostgreSQL</li>
+                  <li>Spring Data JPA</li>
+                </ul>
+                <a class="project-link" href="https://github.com/JosephLin135/HoopStats" target="_blank">View on GitHub &rarr;</a>
+              </div>
+            </details>
+
+          </div>
         </div>
+      </section>
+
+      <section class="section" id="faq">
+        <div class="container">
+          <p class="section-label reveal">FAQ</p>
+          <div class="faq-list reveal">
+
+            <details class="faq-item">
+              <summary>What's your background?</summary>
+              <div class="faq-answer">
+                <p>I'm a Computer Science graduate from Rutgers University (Sep 2021 – Aug 2025). I'm based in Lodi, NJ and I'm passionate about full-stack development, data infrastructure, and mobile apps.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>What kind of work have you done?</summary>
+              <div class="faq-answer">
+                <p>I've interned at Horizon Blue Cross Blue Shield of NJ as a Software Engineer Intern on the Data Infrastructure team, where I designed CI/CD pipelines across SQL Server, Oracle, and MongoDB and cut batch processing time by 30%. I also completed the Rutgers Blueprint Fellowship where I built a Flask REST API serving 150+ students.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>What's your strongest technical skill?</summary>
+              <div class="faq-answer">
+                <p>I'm strongest in Python, TypeScript, and Java. I've used them across a range of projects — from building REST APIs with Spring Boot and Flask, to developing mobile apps with React Native, to automating database operations and building ML-powered features.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Tell me about the climbing app (Cruxly)</summary>
+              <div class="faq-answer">
+                <p>Cruxly is a mobile app that uses AI to detect climbing holds in real time. I fine-tuned YOLOv8-seg on a custom dataset of 1,700+ images and achieved ~0.80 mAP on instance segmentation. The results stream to the phone in under 5 seconds through a Node.js API I built.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>How can I contact you?</summary>
+              <div class="faq-answer">
+                <p>You can reach me at <strong>linjoe135@gmail.com</strong> or call <strong>(973) 641-3955</strong>. You can also find me on <a href="https://www.linkedin.com/in/joseph-lin135" target="_blank">LinkedIn</a> and <a href="https://github.com/JosephLin135" target="_blank">GitHub</a>.</p>
+              </div>
+            </details>
+
+            <details class="faq-item">
+              <summary>Are you open to work?</summary>
+              <div class="faq-answer">
+                <p>Yes! I'm currently looking for new opportunities, whether it's full-time roles, internships, or freelance projects. Feel free to reach out — my inbox is always open.</p>
+              </div>
+            </details>
+
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="container">
+          <p class="section-label reveal">Contact</p>
+          <div class="contact-wrapper reveal">
+            <div class="contact-info">
+              <p>Got something in mind? Whether it's a project idea, a job opportunity, or just want to say hey — I'd love to hear from you.</p>
+              <ul class="contact-details">
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lodi, NJ 07644</li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> linjoe135@gmail.com</li>
+                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (973) 641-3955</li>
+              </ul>
+            </div>
+            <form action="https://formspree.io/f/myzdknry" method="POST" class="contact-form">
+              <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
+              <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
+              <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
+              <button type="submit" class="contact-button">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>Designed &amp; Built by Joseph Lin</p>
       </div>
-            <h1 class="project-title" id="projects">Personal Projects</h1>
-      <div class="project-section">
-        <div class="project-item">
-          <h2>Chinese Food Ordering Web App</h2>
-          <p class="project-desc">A React and Next.js web application that allows customers to place online orders for my parent's Chinese restaurant. Integrated with Hygraph CMS and GraphQL APIs to manage real-time order data, and designed a fully responsive UI with Tailwind CSS.</p>
-          <ul class="project-tags">
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>Tailwind CSS</li>
-            <li>GraphQL</li>
-          </ul>
-          <img src="src/main-menu.png" alt="Main Menu" class="menu-image" />
-          <img src="src/checkout.png" alt="Checkout" class="checkout-image" />
-          <a class="project-link" href="https://github.com/JosephLin135/ChinaMoon" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-item">
-          <h2>Online Travel Reservation System</h2>
-          <p class="project-desc">A full-stack Java application built using JDBC and MySQL for managing and booking flights. Designed a normalized relational database schema to maintain consistent reservation data and developed a clean HTML/CSS frontend for efficient flight booking and user management.</p>
-          <ul class="project-tags">
-            <li>Java</li>
-            <li>JDBC</li>
-            <li>MySQL</li>
-            <li>HTML/CSS</li>
-          </ul>
-          <img src="src/flights.png" alt="Main Menu" class="menu-image" />
-          <img src="src/flight-booking.png" alt="Checkout" class="checkout-image" />
-          <a class="project-link" href="https://github.com/JosephLin135/TravelReservation" target="_blank">View on GitHub</a>
-        </div>
-        <div class="project-item">
-          <h2>NBA Stats Tracker - Backend Implementation</h2>
-          <p class="project-desc">A Spring Boot RESTful API that manages 150+ NBA player statistics. Provides accurate performance data and simplified intregation using PostgreSQL and Spring Boot JPA for external applications requiring player's analysis.</p>
-          <ul class="project-tags">
-            <li>Java</li>
-            <li>Spring Boot</li>
-            <li>PostgreSQL</li>
-            <li>API Integration</li>
-          </ul>
-          <a class="project-link" href="https://github.com/JosephLin135/HoopStats" target="_blank">View on GitHub</a>
-        </div>
-      </div>
-      <div id="root"></div>
-    <div id="contacts" style="color: #fff; padding: 40px 0; text-align: center; margin-top: 60px;">
-      
-      <form action="https://formspree.io/f/myzdknry" method="POST" style="max-width: 400px; margin: 0 auto; display: flex; flex-direction: column; gap: 16px;">
+    </footer>
+
     <script>
       document.addEventListener('DOMContentLoaded', function() {
-        const contactForm = document.querySelector('#contacts form');
-        if (contactForm) {
-          contactForm.addEventListener('submit', function(e) {
-            setTimeout(function() {
-              contactForm.reset();
-            }, 100);
+        var reveals = document.querySelectorAll('.reveal');
+        var observer = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('visible');
+              observer.unobserve(entry.target);
+            }
           });
-        }
+        }, { threshold: 0.1 });
+        reveals.forEach(function(el) { observer.observe(el); });
       });
     </script>
-        <h2 class="contact-title">Contact</h2>
-      <p class="contact-desc">Send me a message and I'll get back to you!</p>
-      <form action="https://formspree.io/f/myzdknry" method="POST" class="contact-form">
-        <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
-        <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
-        <input type="text" name="phone" placeholder="Your Phone Number" class="contact-input" />
-        <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
-        <button type="submit" class="contact-button">Send Message</button>
-      </form>
-    </div>
-
-    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
