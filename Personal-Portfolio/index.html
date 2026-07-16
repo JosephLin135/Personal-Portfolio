@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image" href="jl.png" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Lin | Software Engineer</title>
     <link rel="stylesheet" href="src/index.css" />
@@ -10,15 +10,22 @@
   <body>
     <nav>
       <div class="nav-inner">
-        <a href="#top" class="nav-logo">JL</a>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+        <div class="nav-left">
+          <a href="#top" class="nav-logo">JL</a>
+        </div>
+        <div class="nav-right">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <svg class="icon-moon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+            <svg class="icon-sun" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+          </button>
+        </div>
       </div>
     </nav>
 
@@ -29,9 +36,7 @@
         <h1 class="hero-name reveal">Joseph Lin.</h1>
         <h2 class="hero-tagline reveal">I build things for the web &amp; mobile.</h2>
         <p class="hero-desc reveal">
-          I'm a Computer Science graduate from Rutgers University with a passion for
-          full-stack development, data infrastructure, and mobile apps. Currently
-          based in the New York City Area.
+          CS graduate from Rutgers, based in the NYC area.
         </p>
         <div class="hero-cta reveal">
           <a href="#projects" class="btn btn-primary">View My Work</a>
@@ -55,7 +60,7 @@
           </li>
           <li>
             <a href="public/JosephLinResume.pdf" target="_blank" aria-label="Resume">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+              <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
             </a>
           </li>
         </ul>
@@ -68,10 +73,10 @@
           <p class="section-label reveal">About</p>
           <div class="about-card reveal">
             <p>
-              Hello, my name is Joseph Lin and I am a Computer Science graduate with a
-              passion for web development and data engineering. I enjoy building
-              scalable applications with data to drive insight. I hold a Bachelor of Science in Computer Science and am still continuing to get my
-              undergraduate certificate in Packaging Engineering. I have previously interned at Horizon Blue Cross Blue Shield of New Jersey working as a Database Engineer, where I developed optimized SQL queries to track and manage server operations. I'm always open to networking, new opportunities, and collaborations — feel free to reach out!
+              I'm a Computer Science graduate from Rutgers University with a passion for
+              building scalable applications. I enjoy full-stack development, data infrastructure,
+              and mobile apps. I also hold an undergraduate certificate in Packaging Engineering.
+              I'm always open to networking, new opportunities, and collaborations — feel free to reach out!
             </p>
           </div>
         </div>
@@ -127,7 +132,7 @@
               </div>
             </details>
 
-            <details class="expand-card">
+            <details class="expand-card" open>
               <summary class="expand-header">
                 <div class="expand-header-left">
                   <h3>Rutgers Blueprint Fellowship</h3>
@@ -171,7 +176,12 @@
                   <li>PostgreSQL</li>
                   <li>YOLOv8</li>
                 </ul>
-                <a class="project-link" href="https://github.com/JosephLin135" target="_blank">View on GitHub &rarr;</a>
+                <a class="project-link" href="https://github.com/JosephLin135/belay" target="_blank">View on GitHub &rarr;</a>
+                <div class="project-images">
+                  <img src="src/cruxly-profile.jpg" alt="Cruxly Profile" />
+                  <img src="src/cruxly-discussion.jpg" alt="Cruxly Discussion" />
+                  <img src="src/cruxly-tracker.jpg" alt="Cruxly Tracker" />
+                </div>
               </div>
             </details>
 
@@ -195,7 +205,13 @@
                 </ul>
                 <div class="project-links-row">
                   <a class="project-link" href="https://rallo.cc" target="_blank">Live Site &rarr;</a>
-                  <a class="project-link" href="https://github.com/JosephLin135" target="_blank">GitHub &rarr;</a>
+                  <a class="project-link" href="https://github.com/JosephLin135/rallo" target="_blank">GitHub &rarr;</a>
+                </div>
+                <div class="project-images">
+                  <img src="src/rallo-front.jpg" alt="Rallo Front" />
+                  <img src="src/rallo-explore.jpg" alt="Rallo Explore" />
+                  <img src="src/rallo-friends.jpg" alt="Rallo Friends" />
+                  <img src="src/rallo-profile.jpg" alt="Rallo Profile" />
                 </div>
               </div>
             </details>
@@ -217,12 +233,12 @@
                   <li>Tailwind CSS</li>
                   <li>GraphQL</li>
                 </ul>
-                <div class="project-images">
+                <div class="project-images project-images--web">
                   <img src="src/main-menu.png" alt="Main Menu" />
                   <img src="src/checkout.png" alt="Checkout" />
-                </div>
+                <!-- </div>
                 <a class="project-link" href="https://github.com/JosephLin135/ChinaMoon" target="_blank">View on GitHub &rarr;</a>
-              </div>
+              </div> -->
             </details>
 
             <details class="expand-card">
@@ -249,75 +265,22 @@
         </div>
       </section>
 
-      <section class="section" id="faq">
-        <div class="container">
-          <p class="section-label reveal">FAQ</p>
-          <div class="faq-list reveal">
-
-            <details class="faq-item">
-              <summary>What's your background?</summary>
-              <div class="faq-answer">
-                <p>I'm a Computer Science graduate from Rutgers University (Sep 2021 – Aug 2025). I'm based in Lodi, NJ and I'm passionate about full-stack development, data infrastructure, and mobile apps.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>What kind of work have you done?</summary>
-              <div class="faq-answer">
-                <p>I've interned at Horizon Blue Cross Blue Shield of NJ as a Software Engineer Intern on the Data Infrastructure team, where I designed CI/CD pipelines across SQL Server, Oracle, and MongoDB and cut batch processing time by 30%. I also completed the Rutgers Blueprint Fellowship where I built a Flask REST API serving 150+ students.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>What's your strongest technical skill?</summary>
-              <div class="faq-answer">
-                <p>I'm strongest in Python, TypeScript, and Java. I've used them across a range of projects — from building REST APIs with Spring Boot and Flask, to developing mobile apps with React Native, to automating database operations and building ML-powered features.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>Tell me about the climbing app (Cruxly)</summary>
-              <div class="faq-answer">
-                <p>Cruxly is a mobile app that uses AI to detect climbing holds in real time. I fine-tuned YOLOv8-seg on a custom dataset of 1,700+ images and achieved ~0.80 mAP on instance segmentation. The results stream to the phone in under 5 seconds through a Node.js API I built.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>How can I contact you?</summary>
-              <div class="faq-answer">
-                <p>You can reach me at <strong>linjoe135@gmail.com</strong> or call <strong>(973) 641-3955</strong>. You can also find me on <a href="https://www.linkedin.com/in/joseph-lin135" target="_blank">LinkedIn</a> and <a href="https://github.com/JosephLin135" target="_blank">GitHub</a>.</p>
-              </div>
-            </details>
-
-            <details class="faq-item">
-              <summary>Are you open to work?</summary>
-              <div class="faq-answer">
-                <p>Yes! I'm currently looking for new opportunities, whether it's full-time roles, internships, or freelance projects. Feel free to reach out — my inbox is always open.</p>
-              </div>
-            </details>
-
-          </div>
-        </div>
-      </section>
-
       <section class="section" id="contact">
         <div class="container">
           <p class="section-label reveal">Contact</p>
-          <div class="contact-wrapper reveal">
-            <div class="contact-info">
-              <p>Got something in mind? Whether it's a project idea, a job opportunity, or just want to say hey — I'd love to hear from you.</p>
-              <ul class="contact-details">
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> Lodi, NJ 07644</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> linjoe135@gmail.com</li>
-                <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (973) 641-3955</li>
-              </ul>
+          <div class="contact-card reveal">
+            <div class="contact-card-inner">
+              <div class="contact-info">
+                <h3 class="contact-heading">Let's work together</h3>
+                <p class="contact-subtext">Got something in mind? Whether it's a project idea, a job opportunity, or just want to say hey — I'd love to hear from you.</p>
+              </div>
+              <form action="https://formspree.io/f/myzdknry" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
+                <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
+                <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
+                <button type="submit" class="contact-button">Send Message</button>
+              </form>
             </div>
-            <form action="https://formspree.io/f/myzdknry" method="POST" class="contact-form">
-              <input type="text" name="name" placeholder="Your Name" required class="contact-input" />
-              <input type="email" name="email" placeholder="Your Email" required class="contact-input" />
-              <textarea name="message" placeholder="Your Message" required class="contact-textarea"></textarea>
-              <button type="submit" class="contact-button">Send Message</button>
-            </form>
           </div>
         </div>
       </section>
@@ -329,19 +292,6 @@
       </div>
     </footer>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        var reveals = document.querySelectorAll('.reveal');
-        var observer = new IntersectionObserver(function(entries) {
-          entries.forEach(function(entry) {
-            if (entry.isIntersecting) {
-              entry.target.classList.add('visible');
-              observer.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.1 });
-        reveals.forEach(function(el) { observer.observe(el); });
-      });
-    </script>
+    <script src="src/main.js"></script>
   </body>
 </html>
